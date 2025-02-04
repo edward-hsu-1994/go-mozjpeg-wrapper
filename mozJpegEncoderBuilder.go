@@ -1,4 +1,4 @@
-package go_mozjpeg_wapper
+package go_mozjpeg_wrapper
 
 import (
 	"errors"
