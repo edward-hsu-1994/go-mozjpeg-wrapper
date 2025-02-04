@@ -1,6 +1,6 @@
-# go-mozjpeg-wapper
+# go-mozjpeg-wrapper
 
-`go-mozjpeg-wapper` is a Go wrapper for the MozJPEG command-line JPEG encoder. It allows you to easily encode JPEG images using the powerful and efficient MozJPEG library through Go interfaces.
+`go-mozjpeg-wrapper` is a Go wrapper for the MozJPEG command-line JPEG encoder. It allows you to easily encode JPEG images using the powerful and efficient MozJPEG library through Go interfaces.
 
 ## Features
 
@@ -11,10 +11,10 @@
 
 ## Installation
 
-To use `go-mozjpeg-wapper`, ensure you have [MozJPEG](https://github.com/mozilla/mozjpeg) installed on your system. Then, include the package in your Go project by importing it:
+To use `go-mozjpeg-wrapper`, ensure you have [MozJPEG](https://github.com/mozilla/mozjpeg) installed on your system. Then, include the package in your Go project by importing it:
 
 ```go
-import "github.com/edward-hsu-1994/go-mozjpeg-wapper"
+import "github.com/edward-hsu-1994/go-mozjpeg-wrapper"
 ```
 
 ## Usage
@@ -26,12 +26,12 @@ package main
 
 import (
     "fmt"
-    "go-mozjpeg-wapper"  // Import the package
+    "go-mozjpeg-wrapper"  // Import the package
     "log"
 )
 
 func main() {
-    builder := go_mozjpeg_wapper.NewMozJpegEncoderBuilder()
+    builder := go_mozjpeg_wrapper.NewMozJpegEncoderBuilder()
 	builder = builder.SetCliExecutablePath("/path/to/mozjpeg/cjpeg")
     encoder, err := builder.SetQuality(85).Build()
     if err != nil {
